@@ -1,0 +1,151 @@
+<!html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+        body {
+            font-family: 'Dancing Script', cursive;
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2em;
+            border-radius: 16px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
+            max-width: 90%;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #e91e63;
+            animation: heartbeat 1s infinite;
+        }
+        p {
+            font-size: 1.4em;
+            margin: 1em 0;
+            animation: fadeIn 3s ease-in-out;
+            line-height: 1.5em; /* Adjusts the line height to add space between lines */
+        }
+        .footer {
+            margin-top: 2em;
+            font-size: 1em;
+            color: #777;
+        }
+        .instagram-section {
+            margin-top: 2em;
+            font-size: 1.2em;
+        }
+        .instagram-link {
+            color: #e91e63;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #e91e63;
+            padding: 0.5em 1em;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .instagram-link:hover {
+            background-color: #e91e63;
+            color: #fff;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border: 3px solid #e91e63;
+            margin-left: 0.5em;
+            vertical-align: middle;
+        }
+        .message-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1em;
+        }
+        .message-text {
+            margin-right: 1em;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes heartbeat {
+            0%, 28%, 70%, 100% {
+                transform: scale(1);
+            }
+            14% {
+                transform: scale(1.3);
+            }
+            42% {
+                transform: scale(1.3);
+            }
+        }
+        .heart {
+            color: #e91e63;
+            font-size: 3em;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border: 5px dashed #e91e63;
+            border-radius: 16px;
+            box-sizing: border-box;
+            pointer-events: none; /* Allows clicking through the border */
+            animation: borderPulse 2s infinite;
+        }
+        @keyframes borderPulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heart">❤️</h1>
+        <p>This is a special message just for you!<br><br>Hey vishakha finally i get to know your name bahut mushkil se bataya tumhare friend yash ne fir just to confirm i go to manager jisse tumne hi wave 👋 kraa thaa NBC pe and here i am , want to say you something, Tum bahut bahut bahut cute 🥹 ho yaar nazar nhi hta pa rhaa thaa 🫠 mein, maybe tumhe laga ho bhyii attitude hai bande mein but aisa nhi hai 🥲 I was feeling very nervous itna tej dil bahut time baad dhadkaa 😅 same jesa abhi screen pe show ho rha 😂 toh i was like kya bolu hope you understand but when i try to come and say hi you were sitting with your group toh ayaa nhi awkward ho jataa isliyee, I’m sending this beautiful message to beautiful lady you my vishakha,I hope 🤞 ye message pahuch jaye tumhare pass,I will wait for your message 😉 and at last idk you are committed or not but mein rhe nhi paya toh bol diyaa<br>
+            <br>
+            <div class="message-section">
+                <div class="message-text">Hope it brings a smile to your face.</div>
+                <img src="https://i.imgur.com/hdGvdmd.jpeg" alt="Dhruva Soni" class="profile-pic">
+            </div>
+            </p>
+        
+        <div class="instagram-section">
+            <p>Add me on Instagram:</p>
+            <a href="https://www.instagram.com/soni.dhruva1" class="instagram-link" target="_blank">soni.dhruva1</a>
+        </div>
+        
+        <div class="footer">
+            <p>From, Dhruva Soni</p>
+        </div>
+    </div>
+</body>
+</html>
